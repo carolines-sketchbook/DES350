@@ -2,36 +2,42 @@
 <html><head>
 <meta charset="utf-8">
 <title>「calculator」</title>
-
+	
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bowlby+One&display=swap" rel="stylesheet">
+	
 </head>
 <style>
-	<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+
 		{}
 		/*body style*/
 		body {
-			font-family: 'Source Sans Pro', sans-serif;
-			background-color: #ff92bdff;
+			font-family: 'Bowlby One', cursive;
+			background-color: #05042fff;
 			margin: 0;
 		}
+	
+	
 		#mycalculator {
 			margin-left: calc(50% - 200px);
-			margin-top: 8%;
+			margin-top: 20%;
 		}
 		/*operator styling*/
 		.operator:hover {
-			background-color: #EADAF5;
-			color: #9845FF;
+			background-color: #000A43;
+			color: #ff92bdff;
 			border-left-color: #DCA7FF;
 			border-right-color: #FFFFFF;
 		}
 		.operator {
-			height: 45.5px;
-			width: 81.8px;
-			background-color: #05042fff;
+			height: 58px;
+			width: 100px;
+			background-color: transparent;
 			color: white;
 			position: relative;	
-			border: solid 2px;
-			font-size: 20px;
+			border: transparent;
+			font-size: 29px;
 			border-bottom-color: #FFFFFF;
 			border-right-color: #DCA7FF;
 			border-top-color: #C8B2CB;
@@ -39,11 +45,11 @@
 		}
 		/*display*/
 		#display {
-			width:400px;
-			height: 100px;
-			text-align: center;
+			width:655px;
+			height: 137px;
+			text-align: right;
 			background-color: #FFFFFF;
-			color: #774D8A;
+			color: #ff92bdff;
 			font-size: 40px;
 			border: solid 2px;
 			border-bottom-color: #C8B2CB;
@@ -53,29 +59,31 @@
 		}
 		/*number styling*/
 		.number:hover {
-			background-color:#6B527E;
+			border: solid 5px;
+			background-color:#05042fff;
 			color: #05042fff;
-			border-left-color: #9845FF;
-			border-right-color: #FFFFFF;
+			border-left-color: #030055;
+			border-right-color: #000000;
 		}	
 		.number {
 			width: 82px;
 			height: 85px;
 			position: relative;
-			border: solid 2px;
+			border: none;
 			border-color: #FFFFFF;
-			font-size: 18.5px;
+			font-size: 30px;
 			border-bottom-color: #CCBACA;
 			border-right-color: #9845FF;
 			border-top-color: #C8B2CB;
 			border-left-color: #FFFFFF;
-			color: white;
+			background-color:transparent;
 		}
 		/*equal sign*/
 		.eq {
 			height: 78px;
-			width: 407px;
-			background-color: #05042fff;
+			width: 150px;
+			background-color: transparent;
+			border: none;
 			border-right-color: #E1B5EE;
 			border-top-color: #C8B2CB;
 			border-left-color: #FFFFFF;
@@ -84,77 +92,98 @@
 			font-size: 25px;
 		}
 		.eq:hover {
-			background-color: #C4AFD3;
-			color: #0011FF;
+			border: solid 5px;
+			background-color: transparent;
+			color: #ff92bdff;
 			border-left-color: #E1B5EE;
+			border-right-color: black;
 			border-top-color: #E1B5EE;			
 		}
 		/*number borders*/
-		#one{right:0px;
-		background-color: #ff003fff;
+		#one{
+		right: 72px;
+		top: 120px;
+		color: #ff003fff;
 		}
-		#two{right: 5px;
-		background-color: #ffad27ff;
+		#two{
+		right: 119px;
+		top: 60px;
+		color: #ffad27ff;
 		}
-		#three{right: 10px;
-		background-color: #ffd629ff;
+		#three{
+		right: 165px;
+		bottom:0px ;
+		color: #ffd629ff;
 		}
-		#four{right: 15px;
-		background-color: #1ec9f0ff;
+		#four{
+		right: 0px;
+		top: 35px;
+		left: 128px;
+		color: #1ec9f0ff;
 		}
-		#five{right: 20px;
-		background-color: #0011FF;
+		#five{
+		right: 0px;
+		left: 81px;
+		bottom: 25px;
+		color: #0011FF;
 		}
-		#six{right:0px;
-		background-color: #ff003fff;
+		#six{
+		left: 207px;
+		bottom: 170px;
+		color: #ff003fff;
 		}
-		#seven{right: 5px;
-		background-color: #ffad27ff;
+		#seven{
+		left: 330px;
+		bottom: 135px;
+		color: #ffad27ff;
 		}
-		#eight{right: 10px;
-		background-color: #ffd629ff;
+		#eight{
+		left: 280px;
+		bottom: 195px;
+		color: #ffd629ff;
 		}
-		#nine{right: 15px;
-		background-color: #1ec9f0ff;
+		#nine{
+		left: 230px;
+		bottom: 255px;
+		color: #1ec9f0ff;
 		}
-		#zero{right: 20px;
-		background-color: #0011FF;
-	}
-
+		#zero{
+		left: 575px;
+		bottom: 340px;
+		color: #0011FF;
+		}
+	
+	
 		/*operator borders*/
-		#clear {}
-		#plus {right: 5px;}
-		#minus {right: 10px;}
-		#times {right: 15px;}
-		#divider {right: 20px;}
-		#eq {}
-
+		#clear {
+		left: 2px;
+		bottom: 90px;
+		}
+		#plus {
+		right: 48px;
+		bottom:348px;
+		}
+		#minus {
+		right: 189px;
+		bottom: 288px;
+		}
+		#times {
+		right: 56px;
+		bottom: 343px;
+		}
+		#divider {
+		right: 198px;
+		bottom: 283px;
+		}
+		#eq {
+			right: 50px;
+			bottom: 40px;
+	}
 </style>
 		<!beginning of html hell>
 <body>
 <form name="calculator">
 <div id="mycalculator">
-	
-		<!beginning of operators>
-	
-	<div class="inputRow">
-		<input type="button" class="operator" name="clear" value="clear" 
-		  onclick="calculator.display.value =''">
-
-		<input type="button" class="operator" name="add" value="+" id="plus"
-		  onclick="calculator.display.value += '+'">
-	
-		<input type="button" class="operator" name="subtract" value="-" id="minus"
-		  onclick="calculator.display.value += '-'">
-		
-		<input type="button" class="operator" name="multiply" value="*" id="times"
-		  onclick="calculator.display.value +='*'">
-		
-		<input type="button" class="operator inputRow" name="divide" 
-			   value="/" id="divider"
-		  onclick="calculator.display.value +='/'">
-	</div>
-	<!end of operators>
 
 	<div id="top_display">
 		<input type="text" name="display" id="display" disabled>
@@ -171,19 +200,19 @@
 
 		<input type="button" class="number" value="3" id="three"
 			   onclick="calculator.display.value+='3'">
-		
+			<div class="inputRow">
 		<input type="button" class="number" value="4" id="four"
 			   onclick="calculator.display.value+='4'">
 	
 		<input type="button" class="number" value="5" id="five"
 			   onclick="calculator.display.value+='5'">
 	</div>
-	
-	<div class="inputRow">
+	</div>
 
 		<input type="button" class="number" value="6" id="six"
 			   onclick="calculator.display.value+='6'">
-		
+			<div class="inputRow">
+
 		<input type="button" class="number" value="7" id="seven"
 			   onclick="calculator.display.value+='7'">
 
@@ -192,12 +221,30 @@
 
 		<input type="button" class="number" value="9" id="nine"
 			   onclick="calculator.display.value+='9'">
-
+	</div>
 		<input type="button" class="number" value="0" id="zero"
 			   onclick="calculator.display.value+='0'">
-
-	</div>
 	<!end of number inputs>
+	
+	<!beginning of operators>
+	<div class="inputRow">
+		<input type="button" class="operator" name="clear" value="CLEAR" 
+		  onclick="calculator.display.value =''">
+
+		<input type="button" class="operator" name="add" value="+" id="plus"
+		  onclick="calculator.display.value += '+'">
+	
+		<input type="button" class="operator" name="subtract" value="-" id="minus"
+		  onclick="calculator.display.value += '-'">
+		
+		<input type="button" class="operator" name="multiply" value="×" id="times"
+		  onclick="calculator.display.value +='×'">
+		
+		<input type="button" class="operator inputRow" name="divide" 
+			   value="÷" id="divider"
+		  onclick="calculator.display.value +='÷'">
+	</div>
+	<!end of operators>
 	
 	<div>
 		<input type="button" class="eq" name="equals" value="=" 
