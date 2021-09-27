@@ -5,36 +5,38 @@
 	
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bowlby+One&display=swap" rel="stylesheet">
-	
+<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;500;700&display=swap" rel="stylesheet">
 </head>
 <style>
-
+	@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@900&display=swap');
+	@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300;500;700&display=swap');
 		{}
 		/*body style*/
 		body {
-			font-family: 'Bowlby One', cursive;
-			background-color: #05042fff;
+			font-family: 'Kanit', sans-serif;
+			background-color: #f2e3df;
 			margin: 0;
+			font-weight: 900;
 		}
-	
-	
 		#mycalculator {
 			margin-left: calc(50% - 200px);
 			margin-top: 20%;
 		}
 		/*operator styling*/
 		.operator:hover {
-			background-color: #000A43;
-			color: #ff92bdff;
+			background-color: white;
+			color: #1ec9f0ff;
 			border-left-color: #DCA7FF;
 			border-right-color: #FFFFFF;
 		}
 		.operator {
+			font-family:'Kanit', sans-serif;
+			font-weight: 700;
 			height: 58px;
 			width: 100px;
 			background-color: transparent;
-			color: white;
+			color: #efb1c0;
 			position: relative;	
 			border: transparent;
 			font-size: 29px;
@@ -43,142 +45,203 @@
 			border-top-color: #C8B2CB;
 			border-left-color: #FFFFFF;
 		}
-		/*display*/
 		#display {
+			font-family:'Kanit', sans-serif;
+			font-weight: 700;
 			width:655px;
 			height: 137px;
 			text-align: right;
 			background-color: #FFFFFF;
 			color: #ff92bdff;
-			font-size: 40px;
-			border: solid 2px;
-			border-bottom-color: #C8B2CB;
-			border-left-color: #FFFFFF;
-			border-right-color: #DCA7FF;
+			font-size: 60px;
+			border: solid 5px;
+			border-bottom-color: #CEACAC;
+			border-left-color: #efb1c0;
+			border-right-color: #efb1c0;;
 			border-top-color: #FFFFFF;
+		/*make display wavy*/
 		}
 		/*number styling*/
 		.number:hover {
 			border: solid 5px;
-			background-color:#05042fff;
-			color: #05042fff;
-			border-left-color: #030055;
-			border-right-color: #000000;
+			background-color:#F9EAE6;
+			border-top-color: white;
+			border-bottom-color: #CEACAC;
+			font-size:32px;
 		}	
 		.number {
+			font-family:'Kanit', sans-serif;
+			font-weight: 900;
 			width: 82px;
 			height: 85px;
 			position: relative;
 			border: none;
 			border-color: #FFFFFF;
 			font-size: 30px;
-			border-bottom-color: #CCBACA;
-			border-right-color: #9845FF;
-			border-top-color: #C8B2CB;
-			border-left-color: #FFFFFF;
 			background-color:transparent;
-		}
-		/*equal sign*/
+		}		/*equal sign*/
 		.eq {
-			height: 78px;
-			width: 150px;
+			font-weight: 700;
+			font-family:'Kanit', sans-serif;
+			height: 58px;
+			width: 100px;
+			position: relative;
 			background-color: transparent;
 			border: none;
+			left:460px;
+			bottom: 350px;
 			border-right-color: #E1B5EE;
 			border-top-color: #C8B2CB;
 			border-left-color: #FFFFFF;
 			border-bottom-color: #E8C8ED;
-			color: white;
-			font-size: 25px;
+			color: #1ec9f0ff;
+			font-size: 30px;
 		}
 		.eq:hover {
-			border: solid 5px;
-			background-color: transparent;
-			color: #ff92bdff;
-			border-left-color: #E1B5EE;
-			border-right-color: black;
-			border-top-color: #E1B5EE;			
+			border: none;
+			background-color: #efb1c0;
+			color: white;
+			font-size:35px;
 		}
+		.clear{
+			font-weight: 700;
+			font-family:'Kanit', sans-serif;
+			position: relative;
+			right:0px;
+			left:435px;
+			bottom:278px;
+			height: 58px;
+			width: 100px;
+			background-color: transparent;
+			border: none;
+			font-size: 24px;
+			border-bottom-color: #FFFFFF;
+			border-right-color: #DCA7FF;
+			border-top-color: #C8B2CB;
+			border-left-color: #FFFFFF;	
+			color:#1ec9f0ff;
+		}
+		.clear:hover {
+			color:white;
+			border:none;
+			background-color: #efb1c0;
+			font-size:26px;
+		}
+	
 		/*number borders*/
 		#one{
 		right: 72px;
 		top: 120px;
-		color: #ff003fff;
+		color: white;
+		text-shadow: 3px 2px #ff003fff;
+		border-right-color:#ff003fff;
+		border-left-color:#ff003fff;
 		}
 		#two{
 		right: 119px;
 		top: 60px;
-		color: #ffad27ff;
+		color: white;
+		text-shadow: 3px 2px #ffad27ff;
+		border-right-color: #ffad27ff;
+		border-left-color: #ffad27ff;
 		}
 		#three{
-		right: 165px;
+		right: 170px;
 		bottom:0px ;
-		color: #ffd629ff;
+		color: white;
+		text-shadow: 3px 2px #ffd629ff;
+		border-left-color:#ffd629ff;
+		border-right-color:#ffd629ff;
 		}
 		#four{
 		right: 0px;
 		top: 35px;
 		left: 128px;
-		color: #1ec9f0ff;
+		color: white;
+		text-shadow: 3px 2px #1ec9f0ff;
+		border-left-color:#1ec9f0ff;
+		border-right-color:#1ec9f0ff;
 		}
 		#five{
 		right: 0px;
 		left: 81px;
 		bottom: 25px;
-		color: #0011FF;
+		color: white;
+		text-shadow: 3px 2px #4a526d;
+		border-right-color:#4a526d;
+		border-left-color:#4a526d;
 		}
 		#six{
-		left: 207px;
+		left: 200px;
 		bottom: 170px;
-		color: #ff003fff;
+		color: white;
+		text-shadow: 3px 2px #ff003fff;
+		border-left-color: #ff003fff;
+		border-right-color: #ff003fff;
 		}
 		#seven{
 		left: 330px;
 		bottom: 135px;
-		color: #ffad27ff;
+		color: white;
+		text-shadow: 3px 2px #ffad27ff;
+		border-left-color:#ffad27ff;
+		border-right-color:#ffad27ff;
 		}
 		#eight{
 		left: 280px;
 		bottom: 195px;
-		color: #ffd629ff;
+		color: white;
+		text-shadow: 3px 2px #ffd629ff;
+		border-right-color:#ffd629ff;
+		border-left-color:#ffd629ff;
 		}
 		#nine{
-		left: 230px;
+		left: 228px;
 		bottom: 255px;
-		color: #1ec9f0ff;
+		color: white;
+		text-shadow: 3px 2px #1ec9f0ff;
+		border-left-color:#1ec9f0ff;
+		border-right-color:#1ec9f0ff;
 		}
 		#zero{
-		left: 575px;
+		left: 587px;
 		bottom: 340px;
-		color: #0011FF;
+		color: white;
+		text-shadow: 3px 2px #4a526d;
+		border-left-color:#4a526d;
+		border-right-color:#4a526d;
 		}
 	
 	
 		/*operator borders*/
 		#clear {
-		left: 2px;
-		bottom: 90px;
+		color: white;
+		text-shadow: 3px 2px pink;
 		}
 		#plus {
-		right: 48px;
+		right: 0px;
+		left:60px;
 		bottom:348px;
 		}
 		#minus {
-		right: 189px;
+		right: 90px;
 		bottom: 288px;
 		}
 		#times {
-		right: 56px;
-		bottom: 343px;
+		right: 0px;
+		left:48px;
+		bottom: 349px;
 		}
 		#divider {
-		right: 198px;
-		bottom: 283px;
+		right: 93px;
+		bottom: 290px;
 		}
 		#eq {
-			right: 50px;
-			bottom: 40px;
+		right: 50px;
+		bottom: 40px;
+		
 	}
+	
 </style>
 		<!beginning of html hell>
 <body>
@@ -224,12 +287,14 @@
 	</div>
 		<input type="button" class="number" value="0" id="zero"
 			   onclick="calculator.display.value+='0'">
+	
+			<input type="button" class="clear" name="clear" value="CLEAR" 
+		  onclick="calculator.display.value =''">
 	<!end of number inputs>
 	
 	<!beginning of operators>
 	<div class="inputRow">
-		<input type="button" class="operator" name="clear" value="CLEAR" 
-		  onclick="calculator.display.value =''">
+
 
 		<input type="button" class="operator" name="add" value="+" id="plus"
 		  onclick="calculator.display.value += '+'">
