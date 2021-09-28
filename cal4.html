@@ -21,14 +21,12 @@
 		}
 		#mycalculator {
 			margin-left: calc(50% - 200px);
-			margin-top: 20%;
+			margin-top: 5%;
 		}
 		/*operator styling*/
 		.operator:hover {
-			background-color: white;
-			color: #1ec9f0ff;
-			border-left-color: #DCA7FF;
-			border-right-color: #FFFFFF;
+			color: #efb1c0;
+			text-shadow: 4px 4px white;
 		}
 		.operator {
 			font-family:'Kanit', sans-serif;
@@ -36,14 +34,15 @@
 			height: 58px;
 			width: 100px;
 			background-color: transparent;
-			color: #efb1c0;
+			color: #4a526d;
 			position: relative;	
 			border: transparent;
-			font-size: 29px;
+			font-size: 40px;
 			border-bottom-color: #FFFFFF;
 			border-right-color: #DCA7FF;
 			border-top-color: #C8B2CB;
 			border-left-color: #FFFFFF;
+			text-shadow: 2px 2px white;
 		}
 		#display {
 			font-family:'Kanit', sans-serif;
@@ -53,55 +52,49 @@
 			text-align: right;
 			background-color: #FFFFFF;
 			color: #ff92bdff;
-			font-size: 60px;
-			border: solid 5px;
-			border-bottom-color: #CEACAC;
-			border-left-color: #efb1c0;
-			border-right-color: #efb1c0;;
-			border-top-color: #FFFFFF;
+			font-size: 80px;
+			border:none;
+			
 		/*make display wavy*/
 		}
-		/*number styling*/
 		.number:hover {
-			border: solid 5px;
-			background-color:#F9EAE6;
-			border-top-color: white;
-			border-bottom-color: #CEACAC;
-			font-size:32px;
+			border: none;
+			font-size:85px;
 		}	
 		.number {
 			font-family:'Kanit', sans-serif;
 			font-weight: 900;
-			width: 82px;
-			height: 85px;
+			width: 100px;
+			height: 115px;
 			position: relative;
 			border: none;
 			border-color: #FFFFFF;
-			font-size: 30px;
+			font-size: 70px;
 			background-color:transparent;
 		}		/*equal sign*/
 		.eq {
 			font-weight: 700;
 			font-family:'Kanit', sans-serif;
 			height: 58px;
-			width: 100px;
+			width: 200px;
 			position: relative;
 			background-color: transparent;
 			border: none;
-			left:460px;
-			bottom: 350px;
+			left:475px;
+			bottom: 465px;
 			border-right-color: #E1B5EE;
 			border-top-color: #C8B2CB;
 			border-left-color: #FFFFFF;
 			border-bottom-color: #E8C8ED;
-			color: #1ec9f0ff;
-			font-size: 30px;
+			color: #4a526d;
+			font-size: 40px;
+			text-shadow: 2px 2px white;
 		}
 		.eq:hover {
 			border: none;
-			background-color: #efb1c0;
-			color: white;
-			font-size:35px;
+			color: #efb1c0;
+			font-size:40px;
+			text-shadow: 6px 4px white;
 		}
 		.clear{
 			font-weight: 700;
@@ -109,9 +102,9 @@
 			position: relative;
 			right:0px;
 			left:435px;
-			bottom:278px;
+			bottom:388px;
 			height: 58px;
-			width: 100px;
+			width: 150px;
 			background-color: transparent;
 			border: none;
 			font-size: 24px;
@@ -119,135 +112,162 @@
 			border-right-color: #DCA7FF;
 			border-top-color: #C8B2CB;
 			border-left-color: #FFFFFF;	
-			color:#1ec9f0ff;
+			color:#4a526d;
+			text-shadow: 3px 2px white;
 		}
 		.clear:hover {
-			color:white;
+			color:#efb1c0;
 			border:none;
-			background-color: #efb1c0;
-			font-size:26px;
+			font-size:24px;
+			text-shadow: 5px 5px white;
 		}
 	
-		/*number borders*/
+		#circle{
+			background:#ffd629ff;
+			border-radius:50%;
+			width:100px;
+			height:100px;
+			shape-outside: circle(50%);
+			position: relative;
+			right: 100px;
+		}
+		.cloudone{
+			height:50%;
+			width:50%;
+		}
+		.path{
+		fill:white;
+		stroke-linejoin:round;
+		}
+		.path:hover{
+		fill:white;
+		stroke:white;
+		}
+	
 		#one{
-		right: 72px;
+		right: 135px;
 		top: 120px;
 		color: white;
-		text-shadow: 3px 2px #ff003fff;
-		border-right-color:#ff003fff;
-		border-left-color:#ff003fff;
-		}
+		text-shadow: 3px 3px #ff003fff;}
+		#one:hover{
+		font-size: 70px;
+		text-shadow: 6px 7px #ff003fff;}
 		#two{
-		right: 119px;
+		right: 185px;
 		top: 60px;
 		color: white;
-		text-shadow: 3px 2px #ffad27ff;
-		border-right-color: #ffad27ff;
-		border-left-color: #ffad27ff;
-		}
+		text-shadow: 3px 3px #ffad27ff;}
+		#two:hover{
+		font-size: 70px;
+		text-shadow: 6px 7px #ffad27ff;}
 		#three{
-		right: 170px;
+		right: 238px;
 		bottom:0px ;
 		color: white;
-		text-shadow: 3px 2px #ffd629ff;
-		border-left-color:#ffd629ff;
-		border-right-color:#ffd629ff;
-		}
+		text-shadow: 3px 3px #ffd629ff;}
+		#three:hover{
+		font-size: 70px;
+		text-shadow: 6px 7px #ffd629ff;}
 		#four{
 		right: 0px;
-		top: 35px;
-		left: 128px;
+		top: 13px;
+		left: 93px;
 		color: white;
-		text-shadow: 3px 2px #1ec9f0ff;
-		border-left-color:#1ec9f0ff;
-		border-right-color:#1ec9f0ff;
-		}
+		text-shadow: 3px 3px #1ec9f0ff;}
+		#four:hover{
+		font-size: 70px;
+		text-shadow: 6px 7px #1ec9f0ff;}
 		#five{
 		right: 0px;
-		left: 81px;
-		bottom: 25px;
+		left: 45px;
+		bottom: 45px;
 		color: white;
-		text-shadow: 3px 2px #4a526d;
-		border-right-color:#4a526d;
-		border-left-color:#4a526d;
-		}
+		text-shadow: 3px 3px #4a526d;}
+		#five:hover{
+		font-size: 70px;
+		text-shadow: 6px 7px #4a526d;}
 		#six{
 		left: 200px;
-		bottom: 170px;
+		bottom: 221px;
 		color: white;
-		text-shadow: 3px 2px #ff003fff;
-		border-left-color: #ff003fff;
-		border-right-color: #ff003fff;
-		}
+		text-shadow: 3px 3px #ff003fff;}
+		#six:hover{
+		font-size: 70px;
+		text-shadow: 6px 7px #ff003fff;}
 		#seven{
 		left: 330px;
-		bottom: 135px;
+		bottom: 215px;
 		color: white;
-		text-shadow: 3px 2px #ffad27ff;
-		border-left-color:#ffad27ff;
-		border-right-color:#ffad27ff;
-		}
+		text-shadow: 3px 3px #ffad27ff;}
+		#seven:hover{
+		font-size: 70px;
+		text-shadow: 6px 7px #ffad27ff;}
 		#eight{
 		left: 280px;
-		bottom: 195px;
+		bottom: 270px;
 		color: white;
-		text-shadow: 3px 2px #ffd629ff;
-		border-right-color:#ffd629ff;
-		border-left-color:#ffd629ff;
-		}
+		text-shadow: 3px 3px #ffd629ff;}
+		#eight:hover{
+		font-size: 70px;
+		text-shadow: 6px 7px #ffd629ff;}
 		#nine{
 		left: 228px;
-		bottom: 255px;
+		bottom: 330px;
 		color: white;
-		text-shadow: 3px 2px #1ec9f0ff;
-		border-left-color:#1ec9f0ff;
-		border-right-color:#1ec9f0ff;
-		}
+		text-shadow: 3px 3px #1ec9f0ff;}
+		#nine:hover{
+		font-size: 70px;
+		text-shadow: 6px 7px #1ec9f0ff;}
 		#zero{
-		left: 587px;
-		bottom: 340px;
+		left: 586px;
+		bottom: 445px;
 		color: white;
-		text-shadow: 3px 2px #4a526d;
-		border-left-color:#4a526d;
-		border-right-color:#4a526d;
-		}
-	
-	
+		text-shadow: 3px 3px #4a526d;}
+		#zero:hover{
+		font-size: 70px;
+		text-shadow: 6px 7px #4a526d;}
 		/*operator borders*/
 		#clear {
 		color: white;
-		text-shadow: 3px 2px pink;
 		}
 		#plus {
-		right: 0px;
-		left:60px;
-		bottom:348px;
+		left:30px;
+		bottom:482px;
 		}
 		#minus {
-		right: 90px;
-		bottom: 288px;
+		right: 125px;
+		bottom: 420px;
 		}
 		#times {
 		right: 0px;
-		left:48px;
-		bottom: 349px;
+		left:50px;
+		bottom: 472px;
 		}
 		#divider {
 		right: 93px;
-		bottom: 290px;
+		bottom: 413px;
 		}
 		#eq {
 		right: 50px;
-		bottom: 40px;
-		
-	}
-	
+		bottom: 40px;	
+		}
+
 </style>
 		<!beginning of html hell>
 <body>
 <form name="calculator">
 <div id="mycalculator">
-
+<div id="circle"></div>
+	<div id="cloudone"></div>
+	<cloudone viewbox='0 0 105 105'>
+	<path d='M 25, 60
+			 a 20, 20 1 0, 0 0, 40
+			 h 50
+			 a 20, 20 1 0, 0 0, -40
+			 a 10, 10 1 0, 0 -15, -10
+			 a 15,15 1 0, 0 -35, 10
+			 z' />
+		</cloudone>
 	<div id="top_display">
 		<input type="text" name="display" id="display" disabled>
 	</div>
@@ -291,10 +311,8 @@
 			<input type="button" class="clear" name="clear" value="CLEAR" 
 		  onclick="calculator.display.value =''">
 	<!end of number inputs>
-	
 	<!beginning of operators>
 	<div class="inputRow">
-
 
 		<input type="button" class="operator" name="add" value="+" id="plus"
 		  onclick="calculator.display.value += '+'">
