@@ -9,16 +9,16 @@
 	body {
 		font-family:'Alice Regular';
 		background-color: #E780E0;
-		padding-left 5%;
-		padding-top: 5%;
+		padding-left 6%;
+		padding-top: 2%;
 	}
 		a{text-decoration: none;}
 	#name{
+		padding-left:10px;
 		font-family:'Alice Regular';
 		font-size:35px;
 		color:white;
 		transition: color .2s;
-		animation:;
 	}
 	#name:hover{
 		color:#9BCBFF;
@@ -27,6 +27,7 @@
 		blur-radius:5px;
 	}
 	#welcome{
+		padding-left:10px;
 		font-size:22px;
 		color:white;
 		transition: color .2s;
@@ -35,7 +36,69 @@
 		color:#8FE4B2;
 		transition-duration:1.5s;
 	}
+	.butterfly{
+		width:5px;
+		height:22px;
+		color:white;
+		background-color:white;
+		position:absolute;
+		animation-name:move;
+		animation-duration:15s;
+		animation-delay: 0s;
+		animation-iteration-count:infinite;
+		
+	}
+	
+	@-webkit-keyframes move{ 
+			0%{
+				top:50px;
+				left:145px;
+				background-color:white;
+			}
+			25%{
+				top:10px;
+				left:475px;	
+				background-color:white;
+			}
+			50%{
+				top:500px;
+				left:1000px;
+				background-color:white;
+			}
+		57%{background-color:#ACA1F4;}
+			65%{
+				top:600px;
+				left:900px;
+				background-color:#7A6DCC;
+			}
+			70%{
+				top:700px;
+				left:1050px;
+				background-color:#AB9FF8;
+			}
+			71%{background-color:white;}
+			75%{
+				top:200px;
+				left:1200px;
+				border-radius:100px;
+				bacground-color:white;
+			}
+			90%{
+				top: 100px;
+				left: 1475px;	
+				background-color:white;
+			}
+			/*100% is 10 sec/end of timeline*/
+			100%{
+				top:50px;
+				left:145px;
+				background-color:white;
+			}
+		}
+	
+	
 	#about-me{
+		padding-left:10px;		
 		font-size:28px;
 		color:white;
 		transition: color.2s;
@@ -46,6 +109,7 @@
 		text-shadow:3px 2px grey;
 	}
 	#about-me-text{
+		padding-left:10px;
 		font-size:22px;
 		color:white;
 		transition:color .2s;
@@ -75,7 +139,7 @@
 	link:hover{color:pink;}
 	
 	.square{
-		width:10px;
+		width:7px;
 		height:930px;
 		background-color:#FFAFD9;
 		position:absolute;
@@ -141,6 +205,9 @@
 		</p>
 	</div>
 	<div class="square"></div>
+	<div class="butterfly"></div>
+	<div class="wing1"></div>
+	<div class="wing2"></div>
 	
 </body>
 </html>
