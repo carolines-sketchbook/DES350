@@ -34,6 +34,9 @@
 		left: 694px;
 		border-radius:100%;
 		z-index:105;
+		animation-name:eye_movementpupilleft;
+		animation-duration:10s;
+		animation-iteration-count: infinite;
 	}
 	#coverleft1{
 		position:absolute;
@@ -47,11 +50,11 @@
 	}
 	#coverleft2{
 		position:absolute;
-		width:65px;
-		height:7px;
+		width:75px;
+		height:12px;
 		background-color:#D4A881;
-		top:386px;
-		left:664px;
+		top:382px;
+		left:660px;
 		z-index:110;
 	}
 	#lidcoverleft{
@@ -103,6 +106,9 @@
 		top:387px;
 		left:688px;
 		z-index:102;
+	animation-name:color, eye_movementirisleft;
+	animation-duration:10s;
+	animation-iteration-count: infinite;
 	}
 	#base_scleraleft{
 		height:40px;
@@ -157,6 +163,9 @@
 		top:395px;
 		left:865px;
 		z-index:105;
+	animation-name:eye_movementpupilright;
+	animation-duration:10s;
+	animation-iteration-count: infinite;
 	}
 	#coverright1{
 		position:absolute;
@@ -171,10 +180,10 @@
 	#coverright2{
 		position:absolute;
 		width:65px;
-		height:7px;
+		height:11px;
 		background-color:#D4A881;
-		top:386px;
-		left:844px;
+		top:382px;
+		left:854px;
 		z-index:110;
 	}
 	#lidcoverright{
@@ -224,6 +233,10 @@
 		left:859px;
 		border-radius:70%;
 		z-index:102;
+	animation-name:color, eye_movementirisright;
+	animation-duration:10s;
+	animation-iteration-count: infinite;
+	
 	}
 	#base_scleraright{
 		height:40px;
@@ -771,6 +784,9 @@
 		top:1025px;
 		left:562px;
 		transform:rotate(1deg);
+	animation-name:color;
+	animation-duration:10s;
+	animation-iteration-count: infinite;
 	}
 	#h_coverright{
 		width:99px;
@@ -782,6 +798,9 @@
 		top:995px;
 		left:867px;
 		z-index:90;
+	animation-name:color;
+	animation-duration:10s;
+	animation-iteration-count: infinite;
 	}
 /*base of hair(6)*/
 	#b_front{
@@ -840,11 +859,80 @@
 		transform:rotate(-35deg);
 		z-index:103;
 	}
+	.cirlce{}
+	.square{}
+	
 	body{
 		background-color:#703A70;
 		margin-top:0px;
 		position:absolute;
+	animation-name:color;
+	animation-duration:10s;
+	animation-iteration-count: infinite;
 	}
+	/*animations*/
+	@-webkit-keyframes color{ 
+		0%{}
+		25%{}
+		50%{background-color:#AD0040;}
+		75%{background-color:#B251B3;}
+		100%{}
+	}
+	@-webkit-keyframes eye_movementirisleft{ 
+		0%{}
+		25%{top:387px;
+			left:704px;
+		}
+		50%{top:392px;
+			left:687px;
+		}
+		75%{top:387px;
+			left:674px;
+		}
+		100%{}
+	}
+		@-webkit-keyframes eye_movementirisright{ 
+		0%{}
+		25%{top:387px;
+			left:875px;
+		}
+		50%{top:392px;
+			left:858px;
+			
+		}
+		75%{top:387px;
+			left:845px;
+		}
+		100%{}
+	}
+		@-webkit-keyframes eye_movementpupilleft{ 
+		0%{}
+		25%{top:395px;
+			left:710px;
+		}
+		50%{top:400px;
+			left:693px;
+		}
+		75%{top:395px;
+			left:680px;
+		}
+		100%{}
+	}
+		@-webkit-keyframes eye_movementpupilright{ 
+		0%{}
+		25%{top:395px;
+			left:881px;
+		}
+		50%{top:400px;
+			left:864px;
+		}
+		75%{top:395px;
+			left:851px;
+		}
+		100%{}
+	}
+	
+
 </style>
 </head>
 <body>	
@@ -946,6 +1034,8 @@
 	<div id="roundwingbotright"></div>
 	<div id="wingtipright"></div>
 	<div id="topwingtipright"></div>
+<div class="circle"></div>
+<div class="square"></div>
 </div><!--head ending-->	
 </body>
 </html>
