@@ -56,6 +56,9 @@
 		top:382px;
 		left:660px;
 		z-index:110;
+		animation-name:lidleft;
+		animation-duration:10s;
+		animation-iteration-count: infinite;
 	}
 	#lidcoverleft{
 		position:absolute;
@@ -85,6 +88,9 @@
 		top:393px;
 		left:681px;
 		z-index:106;
+		animation-name:lashleft;
+		animation-duration:10s;
+		animation-iteration-count: infinite;
 	}
 	#lashlineleft3{
 		background-color:#231F20;
@@ -106,7 +112,7 @@
 		top:387px;
 		left:688px;
 		z-index:102;
-	animation-name:color, eye_movementirisleft;
+	animation-name:coloreyes, eye_movementirisleft;
 	animation-duration:10s;
 	animation-iteration-count: infinite;
 	}
@@ -186,6 +192,9 @@
 		top:382px;
 		left:854px;
 		z-index:110;
+		animation-name:lidright;
+		animation-duration:10s;
+		animation-iteration-count:infinite;
 	}
 	#lidcoverright{
 		position:absolute;
@@ -214,6 +223,9 @@
 		top:393px;
 		left:855px;
 		z-index:106;
+		animation-name:lashright;
+		animation-iteration-count: infinite;
+		animation-duration:10s;
 	}
 	#lashlineright3{
 		background-color:#231F20;
@@ -234,7 +246,7 @@
 		left:859px;
 		border-radius:70%;
 		z-index:102;
-	animation-name:color, eye_movementirisright;
+	animation-name:coloreyes, eye_movementirisright;
 	animation-duration:10s;
 	animation-iteration-count: infinite;
 	
@@ -293,6 +305,9 @@
 		left:717px;
 		z-index:102;
 		transform:rotate(6deg);
+		animation-name: browleft1;
+		animation-duration: 10s;
+		animation-iteration-count: infinite;
 	}
 	#browright{
 		width:38.4px;
@@ -303,6 +318,9 @@
 		left:829px;
 		z-index:102;
 		transform:rotate(-6deg);
+		animation-name: browright1;
+		animation-duration: 10s;
+		animation-iteration-count: infinite;
 	}
 	#browleft2{
 		width:45px;
@@ -313,6 +331,9 @@
 		left:674px;
 		z-index:100;
 		transform:rotate(2deg);
+		animation-name: browleft2;
+		animation-duration: 10s;
+		animation-iteration-count: infinite;
 	}
 	#browright2{
 		width:45px;
@@ -323,6 +344,9 @@
 		left:865px;
 		z-index:100;
 		transform:rotate(-2deg);
+		animation-name: browright2;
+		animation-duration: 10s;
+		animation-iteration-count: infinite;
 	}
 	#browleft3{
 		width:38.4px;
@@ -333,6 +357,9 @@
 		left:639px;
 		z-index:100;
 		transform:rotate(-9deg);
+		animation-name:browleft3;
+		animation-duration: 10s;
+		animation-iteration-count: infinite;
 	}
 	#browright3{
 		width:38.4px;
@@ -343,6 +370,9 @@
 		left:906px;
 		z-index:100;
 		transform:rotate(9deg);
+		animation-name: browright3;
+		animation-duration: 10s;
+		animation-iteration-count: infinite;
 	}
 /*mouth(4)*/
 	#m_toplip{
@@ -885,7 +915,7 @@
 	}
 	.cirlce{}
 	.square{}
-	.scene{
+	/*.scene{
 		width:600px;
 		height:600px;
 		margin:0 auto;
@@ -897,7 +927,7 @@
 		width:100%;
 		height:100%;
 		transform-style:preserve-3d;
-		transform:rotateY(0deg) translateZ(300px);
+		transform:rotateY(0deg) translateZ(550px);
 		animation:rotateReverse 40s infinite linear;
 		z-index:80;
 	}
@@ -907,7 +937,7 @@
 		height:200px;
 		margin:0 auto;
 		transform-style:preserve-3d;
-		animation:roundandround 1s infinite linear;
+		animation:roundandround 80s infinite linear;
 		z-index:80;
 	}
 	.tunnel .ring{
@@ -916,21 +946,21 @@
 		left:0;
 		width:100%;
 		height:100%;
-		border:6px;
+		border:8px;
 		border-style:solid;
 		border-radius:50%;
 		transform-origin: 50% 50%;
-		color: #8df435;
+		color: #FF006b;
 		transform: translateY(-200px);
-		z-index:95;
-	}
+		z-index:90;
+	}*/
 	/*https://youtu.be/aV08ydrOrJc*/
-	.ring:nth-child(1){
-		color: #FF0000;
+	/*.ring:nth-child(1){
+		color: #FF006b;
 		transform: rotateX(5deg) translateY(-200px);
 	}
 	.ring:nth-child(2){
-		color: #FF0A00;
+		color: #FF0057;
 		transform: rotateX(10deg) translateY(-200px);
 	}
 	.ring:nth-child(3){
@@ -1194,26 +1224,25 @@
 		transform: rotateX(335deg) translateY(-200px);
 	}
 	.ring:nth-child(68){
-		color: #6D06FF;
+		color: #8805FF;
 		transform: rotateX(340deg) translateY(-200px);
 	}
 	.ring:nth-child(69){
-		color: #6D06FF;
+		color: #AA04FF;
 		transform: rotateX(345deg) translateY(-200px);
 	}
 	.ring:nth-child(70){
-		color: #6D06FF;
+		color: #C204FF;
 		transform: rotateX(350deg) translateY(-200px);
 	}
 	.ring:nth-child(71){
-		color: #6D06FF;
+		color: #FF04D6;
 		transform: rotateX(355deg) translateY(-200px);
 	}
 	.ring:nth-child(72){
-		color: #6D06FF;
+		color: #FF04A0;
 		transform: rotateX(360deg) translateY(-200px);
-	}
-	
+	}*/
 	body{
 		background-color:#703A70;
 		margin-top:0px;
@@ -1225,7 +1254,14 @@
 	/*animations*/
 	@-webkit-keyframes color{ 
 		0%{}
-		25%{}
+		25%{background-color:#735673;}
+		50%{background-color:#000000;}
+		75%{background-color:#735673;}
+		100%{}
+	}
+		@-webkit-keyframes coloreyes{ 
+		0%{}
+		25%{background-color:#B251B3;}
 		50%{background-color:#AD0040;}
 		75%{background-color:#B251B3;}
 		100%{}
@@ -1243,65 +1279,196 @@
 		}
 		100%{}
 	}
-		@-webkit-keyframes eye_movementirisright{ 
+	@-webkit-keyframes eye_movementirisright{ 
 		0%{}
 		25%{top:387px;
 			left:875px;
 		}
 		50%{top:392px;
 			left:858px;
-			
 		}
 		75%{top:387px;
 			left:845px;
 		}
 		100%{}
 	}
-		@-webkit-keyframes eye_movementpupilleft{ 
+	@-webkit-keyframes eye_movementpupilleft{ 
 		0%{}
 		25%{top:395px;
-			left:710px;
-		}
-		50%{top:400px;
-			left:693px;
-		}
+			left:710px;}
+		30%{width:25px;
+			height:27px;}
+		40%{left:700px;}
+		50%{width:10px;
+			height:30px;
+			top:400px;
+			left:700px;}
+		65%{width:25px;
+			height:27px;}
+		71%{left:680px;}
 		75%{top:395px;
 			left:680px;
 		}
 		100%{}
 	}
-		@-webkit-keyframes eye_movementpupilright{ 
+	@-webkit-keyframes eye_movementpupilright{ 
 		0%{}
 		25%{top:395px;
-			left:881px;
-		}
-		50%{top:400px;
-			left:864px;
-		}
+			left:881px;}
+		30%{width:25px;;
+			height:27px;}
+		43%{left:871px;}
+		50%{width:10px;
+			height:30px;
+			top:400px;
+			left:871px;}
+		65%{width:25px;
+			height:27px;}
+		71%{left:851px;}
 		75%{top:395px;
 			left:851px;
 		}
 		100%{}
 	}
-	
+	/*
 	@keyframes roundandround{
 		to{
 			transform:rotateX(360deg);
 		}
 	}
-	
 	@keyframes rotate{
-		0%{
-		transform:rotateX(0deg);
-		}
-		20%{transform: rotateZ(20deg);
-		}
-		60%{transform: rotateZ(30deg);
-		}
-		100%{transform: rotateZ(0deg)
-		}
+		0%{	transform: rotateZ(90deg);}
+		20%{transform: rotateZ(90deg);}
+		60%{transform: rotateZ(90deg);}
+		100%{transform: rotateZ(90deg);}
+	}*/
+	/*eyes*/
+	@keyframes lashright{
+		0%{}
+		30%{width:50px;
+			height:6px;
+			top:393px;
+			left:855px;}
+		40%{width:66px;
+			height:6px;
+			top:398px;
+			left:848px;}
+		50%{width:66px;
+			height:6px;
+			top:398px;
+			left:848px;}
+		63%{width:50px;
+			height:6px;
+			top:393px;
+			left:855px;}
+		100%{}
 	}
-
+		@keyframes lashleft{
+		0%{}
+		30%{width:50px;
+			height:6px;
+			top:393px;
+			left:681px;}
+		40%{width:64px;
+			height:6px;
+			top:398px;
+			left:674px;}
+		50%{width:64px;
+			height:6px;
+			top:398px;
+			left:674px;}
+		63%{width:50px;
+			height:6px;
+			top:393px;
+			left:681px;}
+		100%{}
+	}
+		@keyframes lidright{
+		0%{}
+		30%{width:65px;
+			height:11px;
+			top:382px;
+			left:854px;}
+		40%{width:81px;
+			height:11px;
+			top:387px;
+			left:846px;}
+		50%{width:81px;
+			height:11px;
+			top:387px;
+			left:846px;}
+		63%{width:65px;
+			height:11px;
+			top:382px;
+			left:854px;}
+		100%{}
+	}
+		@keyframes lidleft{
+		0%{}
+		30%{width:75px;
+			height:12px;
+			top:382px;}
+		40%{width:81px;
+			height:11px;
+			top:387px;}
+		50%{width:81px;
+			height:11px;
+			top:387px;}
+		63%{width:65px;
+			height:11px;
+			top:382px;}
+		100%{}
+	}
+/*brows*/
+		@keyframes browleft1{
+		0%{}
+		30%{top:343px;}
+/*diff*/47%{top:333px;}
+		50%{top:333px;}
+/*norm*/59%{top:343px;}
+		100%{}
+	}		
+		@keyframes browleft2{
+		0%{}
+		30%{top:340px;}
+/*diff*/47%{top:330px;}
+		50%{top:330px;}
+/*norm*/59%{top:340px;}
+		100%{}
+	}
+			@keyframes browleft3{
+		0%{}
+		30%{top:342px;}
+/*diff*/47%{top:332px;}
+		50%{top:332px;}
+/*norm*/59%{top:342px;}
+		100%{}
+	}
+			@keyframes browright1{
+		0%{}
+		30%{top:343px;}
+/*diff*/47%{top:333px;}
+		50%{top:333px;}
+/*norm*/59%{top:343px;}
+		100%{}
+	}
+			@keyframes browright2{
+		0%{}
+		30%{top:340px;}
+/*diff*/47%{top:330px;}
+		50%{top:330px;}
+/*norm*/59%{top:340px;}
+		100%{}
+	}
+			@keyframes browright3{
+		0%{}
+		30%{top:342px;}
+/*diff*/47%{top:332px;}
+		50%{top:332px;}
+/*norm*/59%{top:342px;}
+		100%{}
+	}
+	
 </style>
 </head>
 <body>	
@@ -1309,7 +1476,6 @@
 	<!--head beginning-->
 <!--eyes, eyebrows, mouth, face shape, nose, neck, hairfront, base of hair, 
 ****base of hair, hair front, neck , nose , face shape, mouth, eyebrows, eyes-->
-	
 <!--<div class="base_of_hair">-->
 	<div id="b_front"></div>
 	<div id="b_frontright"></div>
@@ -1334,7 +1500,6 @@
 	<div id="h_endcenter"></div>
 	<div id="h_coverleft"></div>
 	<div id="h_coverright"></div>
-
 	<div id="neck"></div>
 <!--<div class="nose">-->
 	<div id="n_centertop"></div>
@@ -1353,7 +1518,6 @@
 	<div id="n_nostrilright3"></div>
 	<div id="n_nostrilleft4"></div>
 	<div id="n_nostrilright4"></div>
-
 <!--<div class="face_shape">-->
 	<div id="f_topcentersq"></div>
 	<div id="f_centerovl"></div>
@@ -1403,9 +1567,8 @@
 	<div id="roundwingbotright"></div>
 	<div id="wingtipright"></div>
 	<div id="topwingtipright"></div>
-<div class="circle"></div>
-<div class="square"></div>
-	
+	<!--tunnel-->
+	<!--
 <div class="scene">
 <div class="wrapper">
 <ul class="tunnel">
@@ -1504,15 +1667,9 @@
 	<li class="ring"></li>
 	<li class="ring"></li>
 	<li class="ring"></li>
-	<li class="ring"></li>
-	<li class="ring"></li>
-	<li class="ring"></li>
-	<li class="ring"></li>
-	<li class="ring"></li>
-	<li class="ring"></li>
 </ul>
-	</div>
-	</div>
+</div>
+</div>-->
 </div><!--head ending-->	
 </body>
 </html>
