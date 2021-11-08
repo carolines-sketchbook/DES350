@@ -385,6 +385,9 @@
     	left: 730px;
 		transform: rotate(180deg);
 		z-index:95;
+		animation-name:toplip;
+		animation-duration:10s;
+		animation-iteration-count: infinite;
 	}
 	#m_lipcurveleft{
 		position:absolute;
@@ -396,6 +399,9 @@
 		left:743px;
 		transform:rotate(-5deg);
 		z-index:95;
+		animation-name:lipleft;
+		animation-duration:10s;
+		animation-iteration-count: infinite;		
 	}
 	#m_lipcurveright{
 		position:absolute;
@@ -407,6 +413,9 @@
 		left:788px;
 		transform:rotate(5deg);
 		z-index:95;
+		animation-name:lipright;
+		animation-duration:10s;
+		animation-iteration-count: infinite;		
 	}
 	#m_botlip{
 		position:absolute;
@@ -422,6 +431,9 @@
 		color: #995A47;
 		transform:rotate(1deg);
 		z-index:95;
+	animation-name: botlip;
+	animation-duration: 10s;
+	animation-iteration-count: infinite;
 		}
 /*face shape(9)*/
 	#f_topcentersq{
@@ -1328,6 +1340,47 @@
 		75%{top:395px;
 			left:851px;
 		}
+		100%{}
+	}
+	@-webkit-keyframes botlip{
+		0%{}
+		30%{transform:rotate(1deg);
+    	top:553px;
+    	left:716px;
+		}
+		45%{transform:rotate(-4deg);
+    	top:552px;
+    	left:719px;}
+		50%{transform:rotate(-4deg);
+    	top:552px;
+    	left:719px;}
+		65%{transform:rotate{1deg);
+    	top:553px;
+    	left:716px;}
+		100%{}
+	}
+		@-webkit-keyframes toplip{
+		0%{}
+		30%{transform:rotate(180deg);}
+		45%{transform:rotate(175deg);}
+		50%{transform:rotate(175deg);}
+		65%{transform:rotate{180deg);}
+		100%{}
+	}
+		@-webkit-keyframes lipleft{
+		0%{}
+		30%{transform:rotate(1deg);}
+		45%{transform:rotate(-5deg);}
+		50%{transform:rotate(-5deg);}
+		65%{transform:rotate{1deg);}
+		100%{}
+	}
+		@-webkit-keyframes lipright{
+		0%{}
+		30%{transform:rotate(1deg);}
+		45%{transform:rotate(5deg);}
+		50%{transform:rotate(5deg);}
+		65%{transform:rotate{1deg);}
 		100%{}
 	}
 	/*
