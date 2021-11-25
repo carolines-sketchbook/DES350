@@ -7,7 +7,8 @@
 <style>
 	body {
 		font-family:'Alice Regular';
-		background-color: #E780E0;
+		background: rgb(231,128,224);
+		background: linear-gradient(90deg, rgba(231,128,224,1) 0%, rgba(230,153,70,1) 100%);
 		padding-left 6%;
 		padding-top: 2%;
 	}
@@ -24,13 +25,16 @@
 		text-shadow:3px, 2px;
 		blur-radius:5px;}
 	#welcome{
-		padding-left:10px;
-		font-size:22px;
+		left:764px;
+		top:182px;
+		position:absolute;
+		font-size:30px;
 		color:white;
 		transition: color .2s;}
 	#welcome:hover{
-		color:#8FE4B2;
+		color:#FFC8C8;
 		transition-duration:.5s;}
+	
 	.butterfly{
 		width:5px;
 		height:22px;
@@ -41,24 +45,37 @@
 		animation-duration:15s;
 		animation-delay: 0s;
 		animation-iteration-count:infinite;
-		border-radius:5px
+		border-radius:5px;
 	}
 	/*trouble here*/
 	.wing1{
-	    width: 0px;
-	    height: 0px;
-	    border: 20px thin;
-	    border-top:20px solid white ;
-	    border-bottom: 0;
+	    width: 10px;
+	    height: 10px;
+	    background-color:pink;
+		color:pink;
+		border-radius:50%;
+	 	position:absolute;
+		bottom: 300px;
+		animation-name:move;
+		animation-duration:15s;
+		animation-delay:0s;
+		animation-iteration-count:infinite;
+		transform:rotate(-10deg);
+	}
+	.wing2{
+		width: 14px;
+	    height: 15px;
+	    background-color:pink;
+		color:pink;
 	 	position:absolute;
 		animation-name:move;
 		animation-duration:15s;
 		animation-delay:0s;
 		animation-iteration-count:infinite;
+		transform:rotate(10deg);
+		border-radius:80px;
 	}
-	.wing2{
-		
-	}
+
 	@-webkit-keyframes move{ 
 			0%{
 				top:50px;
@@ -106,15 +123,21 @@
 	}
 	#about-me{
 		padding-left:10px;		
-		font-size:28px;
+		font-size:25px;
 		color:white;
 		transition: color.2s;
+		position:absolute;
+		top:548px;
+		left:192px;
 	}
 	#about-me:hover{
 		color:#9BCBFF;
 		transition-duration:.5s;
 	}
 	#about-me-text{
+		position:absolute;
+		top:803px;
+		left:753px;
 		padding-left:10px;
 		font-size:22px;
 		color:white;
@@ -124,15 +147,31 @@
 		color:#8FE4B2;
 		transition-duration:.5s;
 	}
-	nav a: hover{color:pink;
-	}
-
+	nav a: hover{color:pink;}
 	/*decoration*/
-	#circles:{font-size:100px;}
-	nav ul {
-		list-style-type:none;}
+	#circles::after{
+		font-size:30px;
+		content: '\2591 \2591 \2591 \2591 \2591 \2591 \2591 \2591 \2591\2591 \2591 \2591 \2591 \2591 \2591 \2591 \2591 \2591 \2591 \2591 \2591 \2591 \2591 \2591 \2591 \2591 \2591 \2591 \2591 \2591 \2591 \2591 \2591 \2591 \2591';
+		color: rgb(255,215,171);
+		color: linear-gradient(90deg, rgba(255,215,171,1) 0%, rgba(255,195,251,1) 100%);}
+	#circlesend::after{
+		font-size:30px;
+		content: '\2591 \2591 \2591 \2591 \2591 \2591 \2591 \2591 \2591\2591 \2591 \2591 \2591 \2591 \2591 \2591 \2591 \2591 \2591 \2591 \2591 \2591 \2591 \2591 \2591 \2591 \2591 \2591 \2591 \2591 \2591 \2591 \2591 \2591 \2591';
+		position:absolute;
+		left:467px;
+		top:583px;
+		color: rgb(255,215,171);
+		color: linear-gradient(90deg, rgba(255,215,171,1) 0%, rgba(255,195,251,1) 100%);}
+	#circlesend2::after{
+		font-size:30px;
+		content: '\2591 \2591 \2591 \2591 \2591 \2591 \2591 \2591 \2591\2591 \2591 \2591 \2591 \2591 \2591 \2591 \2591 \2591 \2591 \2591 \2591 \2591 \2591 \2591 \2591 \2591 \2591 \2591 \2591 \2591 \2591 \2591 \2591 \2591 \2591';
+		position:absolute;
+		left:762px;
+		top:960px;
+		color: rgb(255,215,171);
+		color: linear-gradient(90deg, rgba(255,215,171,1) 0%, rgba(255,195,251,1) 100%);}
+	nav ul {list-style-type:none;}
 	link:hover{color:pink;}
-	
 	.square{
 		width:7px;
 		height:930px;
@@ -141,30 +180,14 @@
 		top:2px;
 		left:10px;
 		wrapping:none;
-		opacity:60%;
-	}
-body,td,th {
-    font-family: "Alice Regular";
-}
-a:link {
-    color: #90DEFF;
-    text-decoration: none;
-}
-a:visited {
-    text-decoration: none;
-    color: #FFE2A9;
-}
-a:hover {
-    text-decoration: none;
-    color: #BF35A6;
-}
-a:active {
-    text-decoration: none;
-    color: #FFFFFF;
-}
+		opacity:60%;}
+body,td,th {font-family: "Alice Regular";}
+a:link {color: #90DEFF; text-decoration: none;}
+a:visited {text-decoration: none; color: #FFE2A9;}
+a:hover {text-decoration: none; color: #BF35A6;}
+a:active {text-decoration: none; color: #FFFFFF;}
 </style>
 </head>
-	
 <body>	
 	<div id="name">
 			<h1> caroline swain| des350</h1>
@@ -173,16 +196,18 @@ a:active {
 			<p>welcome to my portfolio website!</p>
 		</div>
 	<div id="circles">
-		<p>░░░░░░░░░░░░░░░░░░░░░░░░░░░░</p>	
 		</div>
-	
+	<div id="circlesend">
+		</div>
+	<div id="circlesend2">
+		</div>
 <!--beginning of links!-->
-<nav>	
+
+<nav>
 	<div id="self portrait final">
 		<p>
 		<a href="self portrait final.html">ଘ「self portrait final」ଓ* ̀ˋ</a>
 		</p>
-	
 	</div>
 		<div id="self-portrait2">
 			<p><a href="self-portraits-09.jpg">ଘ「self portrait 2」ଓ* ̀ˋ</a>
@@ -208,8 +233,7 @@ a:active {
 			<p>
 			<a href="cal3.html" target="_blank">ଘ「calculator」ଓ* ̀ˋ</a>
 			</p>
-	</div>
-
+	</div>	
 </nav>
 	<div id="about-me">
 		<h2>
@@ -229,6 +253,7 @@ a:active {
 <div class="butterfly"></div>
 	<div class="wing1"></div>
 	<div class="wing2"></div>
+	<div class="circle"></div>
 	
 </body>
 </html>
