@@ -6,42 +6,109 @@
 <style>
 	body{
 		background-color:#98B6C1;
-		font-family: 'Bahnschrift';
-		background-image:url('background_image_url')}
-	}
-	
-	
+		font-family: Bahnschrift, 'Bahnschrift Condensed', 'Bahnschrift Light', 'Bahnschrift Light Condensed', 'Bahnschrift Light SemiCondensed', 'Bahnschrift SemiBold', 'Bahnschrift SemiBold Condensed', 'Bahnschrift SemiBold SemiConden', 'Bahnschrift SemiCondensed', 'Bahnschrift SemiLight', 'Bahnschrift SemiLight Condensed', 'Bahnschrift SemiLight SemiConde';
+		background-image:url("/nationalparkbgd-03.jpg");
+		}
 	#bgd{
 		position:absolute;
-		margin:0 auto;
-		padding:0px;
-		width:700px;
-		height:;
-		z-index:1;
-		
-		
-	}
-	#nps{top:;
-		left:;
+		width: 1600px; 
+		height: 3700px; 
+		left: 0px; 
+		top: 0px; 
+		z-index: -1;
+		}
+	#nps{
+		top:1467px;
+		left:1423px;
 		position:absolute;
-		z-index:2;}
+		z-index:5;
+		color:white;
+		}
+	#activities{
+		position:absolute;
+		font-size:45px;
+		letter-spacing: 7px;
+		top:1420px;
+		left:158px;
+		color:white;
+		z-index:5;
+		font-style:'Bahnschrift SemiLight';}
+	#visit{
+		position:absolute;
+		color:#E5A88E;
+		font-size:38px;
+		top:86px;
+		left:147px;
+		z-index:5;
+		letter-spacing: 8px;
+		}
+	#sequoia_c{
+		position:absolute;
+		top:89px;
+		left:234px;
+		color:white;
+		font-size:69px;
+		letter-spacing:10px;
+		z-index:5;
+	}
+	#seq_info{
+		color:white;
+		position:absolute;
+		top:773px;
+		left:835px;
+		font-size:20px;
+		z-index:5;
+		border-height:200px;
+	}
+	#see_also{
+		color:#97BBD0;
+		position:absolute;
+		top:3048px;
+		left:159px;
+		z-index:5;
+		font:'Bahnschrift Light SemiCondensed';
+		letter-spacing: 2px;
+	}
 	
-	
+		a{text-decoration:none;}
+{background-image:url(../IMAGES/background.jpg);}
 </style>
 </head>
 <body>
+<img src="nationalparkbgd-03.jpg" id="bgd" alt="bgd">
 	
-	<div id="visit"></div>
-	
-	
-	<img src="nationalparkbgd-03.jpg" id="bgd" alt="bgd">
-<nav>
- <div id="nps">
-	<a href= "https://www.nps.gov/seki/index.htm">www.nps.gov</a>
+	<div id="visit">
+	<p>VISIT</p>
 	</div>
 	
-<div id="SEQUOIA, CALIFORNIA"></div>
+	<div id="seq_info">
+	<p>Sequoiadendron giganteum, commonly known as Sequoia, are trees that grow to be about 30 feet wide and 250 feet tall. The largest sequoia tree discovered, General Sherman, is 275 feet tall. The life-
+span of these trees can be up to 3,000 years. Due to an ongoing wildfire caused by lightning, visitors are allowed only at specific areas of sequoia and Kings Canyon.</p>	
+	</div>
+	<div id="see_also">
+	<p>
+	See also:
+	</p>
+	</div>
 	
+<nav>
+<div id="nps">
+	<a href= "https://www.nps.gov/seki/index.htm">www.nps.gov</a>
+	</div>
+<div id="sequoia_c">
+	<h1>
+	SEQUOIA, CALIFORNIA
+	</h1>
+	</div>
+	<div id="activities">
+	<p>
+	Tunnel Log<br>
+	Moro Rock<br>
+	Tokopah Falls<br>
+	Hume Lake<br>
+	Crescent Meadow<br>
+	</p>
+	</div>
 </nav>
 	
 </body>
